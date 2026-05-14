@@ -1,0 +1,926 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #0B0F19;
+    /* position: fixed; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.menulist {
+    display: flex;
+    align-items: center;
+    gap: 3.5em;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.menulist li a {
+    color: white;
+}
+
+.menulist li a:hover {
+    text-decoration: underline;
+    color: #7C3AED;
+}
+.fa-bars{
+    color: white;
+    font-size: 2em;
+    align-items: center;
+    display: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+/* .position {
+    /* border: 2px solid black; */
+    background-color: rgba(20, 15, 35, 0.6);
+    border-radius: 20px;
+    width: 450px;
+    height: 20px;
+    position: relative;
+    filter: blur(1px);
+    padding: 15px;
+    left: 64px;
+}
+
+.circle {
+    /* border: 2px solid black; */
+    background-color: #7C3AED;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 117px;
+    left: 80px;
+}
+
+.front {
+    position: absolute;
+    color: #7C3AED;
+    font-size: 1em;
+    top: 110px;
+    left: 100px;
+} */
+
+.hero-section {
+    width: 90%;
+    margin: auto;
+}
+
+.hero-text {
+    margin: 50px auto;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+}
+
+.wrapper h1 {
+    color: white;
+    line-height: 1.5;
+}
+
+.wrapper h2 {
+    color: #5521af;
+}
+
+.wrapper h5 {
+    color: white;
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+
+.wrapper b {
+    color: white;
+    font-size: 1.3em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.hero-text .opt {
+    color: #915deb;
+}
+
+.hero-text .option {
+    color: #05B0D1;
+}
+
+.wrapper p {
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.wrapper h3 {
+    color: rgb(236, 236, 236);
+    font-size: .9em;
+    line-height: 1.5;
+}
+
+.wrapper h4 {
+    color: rgb(236, 236, 236);
+    font-size: .9em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    margin-bottom: 50px;
+}
+
+.hero-img {
+    margin-bottom: 100px;
+}
+
+.view-btn {
+    /* border: 2px solid black; */
+    padding: 15px 40px;
+    background-image: linear-gradient(to right, #915deb, #5521af);
+    border-radius: 10px;
+    border: none;
+}
+
+.view-btn a {
+    color: white;
+}
+
+.contact-btn {
+    border: 2px solid rgb(27, 27, 27);
+    padding: 15px 45px;
+    background-color: #0B0F19;
+    border-radius: 10px;
+}
+
+.contact-btn a {
+    color: white;
+}
+
+.button {
+    display: flex;
+    gap: 2em;
+    margin-bottom: 20px;
+}
+
+@media(max-width:1024px){
+    .fa-bars{
+        display: block;
+    }
+    .menulist{
+        display: none;
+    }
+    nav .fa-bars{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media(max-width:768px){
+    .fa-bars{
+        display: block;
+        font-size: 2em;
+        margin-left: auto;
+    }
+    .menulist{
+        display: none;
+    }
+    .logo{
+        width: 400px;
+    }
+}
+
+@media(max-width:425px){
+    .wrapper{
+        flex-direction: column;
+    }
+    .hero-text{
+        margin-left: 150px;
+    }
+    .wrapper p{
+        font-size: 1em;
+
+    }
+    
+    
+}
+
+/* ----WORK----- */
+.section-two{
+    position: relative;
+    /* border: 2px solid black; */
+    background-color: #0f1522;
+    width: 100vw;
+    
+    /* width: 1351px;
+    height: 1060px; */
+}
+.recent{
+    position: absolute;
+    color: white;
+    font-size: 2.5em;
+    color: #5521af;
+    left: 510px;
+    top: 45px;
+}
+.works{
+    position: absolute;
+    color: white;
+    font-size: 2.5em;
+    color: #05B0D1;
+    left: 675px;
+    top: 45px;
+}
+
+.parent-one{
+    position: absolute;
+    /* border: 2px solid red; */
+    width: 605.5px;
+    height: 420px;
+    background-color: #0B0F19;
+    top: 130px;
+    left: 50px;
+}
+.parent-one .TV{
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+    top: 20px;
+    left: 20px;
+}
+.parent-one .tv{
+    position: absolute;
+    color:  #999292;
+    font-size: 1.1em;
+    top: 60px;
+    left: 20px;
+}
+.parent-one .fa-arrow-right{
+    position: absolute;
+    font-size: 2em;
+    color: white;
+    top: 10px;
+    left: 530px;
+}
+.parent-one .tv-img{
+    position: absolute;
+    top: 160px;
+    left: 90px;
+}
+
+
+
+.parent-two{
+    position: absolute;
+    /* border: 2px solid red; */
+    width: 605.5px;
+    height: 420px;
+    background-color: #0B0F19;
+    top: 130px;
+    left: 685.5px;
+}
+.parent-two .Fan{
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+    top: 20px;
+    left: 20px;
+}
+.parent-two .fan{
+    position: absolute;
+    color: #999292;
+    font-size: 1.1em;
+    top: 60px;
+    left: 20px;
+}
+.parent-two .fa-arrow-right{
+    position: absolute;
+    font-size: 2em;
+    color: white;
+    top: 10px;
+    left: 530px;
+}
+.parent-two .fan-img{
+    position: absolute;
+    top: 155px;
+    left: 80px;
+}
+
+.parent-three{
+    position: absolute;
+    /* border: 2px solid red; */
+    background-color: #0B0F19;
+    width: 605.5px;
+    height: 420px;
+    top: 580px;
+    left: 50px;
+}
+.parent-three .Fire{
+    position: absolute;
+    font-size: 1.5em;
+    color: white;
+    top: 20px;
+    left: 20px;
+}
+.parent-three .fire{
+    position: absolute;
+    color: #999292;
+    font-size: 1.1em;
+    top: 60px;
+    left: 20px;
+}
+.parent-three .fa-arrow-right{
+    position: absolute;
+    font-size: 2em;
+    color: white;
+    top: 10px;
+    left: 530px;
+}
+.parent-three .fire-image{
+    position: absolute;
+    top: 155px;
+    left: 90px;
+}    
+
+.parent-four{
+    position: absolute;
+    /* border: 2px solid red; */
+    background-color: #0B0F19;
+    width: 605.5px;
+    height: 420px;
+    top: 580px;
+    left: 685.5px;
+}
+.parent-four .Bot{
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+    top: 20px;
+    left: 20px;
+}
+.parent-four .bot{
+    position: absolute;
+    color: #999292;
+    font-size: 1.1em;
+    top: 60px;
+    left: 20px;
+}
+.parent-four .fa-arrow-right{
+    position: absolute;
+    color: white;
+    font-size: 2em;
+    top: 10px;
+    left: 530px;
+}
+.parent-four .bot-image{
+    position: absolute;
+    top: 150px;
+    left: 80px;
+}
+
+
+
+
+
+
+/* ----LEVEL-1---- */
+
+.section-three{
+    /* border: 2px solid black; */
+    background-color: #0B0F19;
+    width: 1351px;
+    height: 220px;
+    position: relative;
+}
+
+
+
+.levelH  .what{
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.levelH .one{
+    position: absolute;
+    left: 125px;
+    top: 10px;
+    color: #999292;
+}
+.image-one{
+    position: absolute;
+    left: 30px;
+    top: 65px;
+}
+.levelH .html{
+    color: white;
+    position: absolute;
+    top: 175px;
+    left: 54px;
+    font-size: 1.2em;
+}
+
+.image-css{
+    position: absolute;
+    left: 270px;
+    top: 65px;
+}
+.levelC .css{
+    position: absolute;
+    left: 298px;
+    top: 175px;
+    color: white;
+    font-size: 1.2em;
+}
+.image-flex{
+    position: absolute;
+    top: 55px;
+    left: 510px;
+}
+.levelF .flex{
+    position: absolute;
+    top: 168px;
+    left: 530px;
+    color: white;
+    font-size: 1.2em;
+}
+
+.image-ani{
+    position: absolute;
+    top: 45px;
+    left: 660px;
+}
+.levelA .animation{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    top: 168px;
+    left: 730px;
+}
+.image-med{
+    position: absolute;
+    top: 80px;
+    left: 950px;
+}
+.levelM .media{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    top: 168px;
+    left: 940px;
+}
+
+.image-git{
+    position: absolute;
+    top: 55px;
+    left: 1180px;
+}
+.levelG .git{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    top: 168px;
+    left: 1220px;
+}
+
+/* -----LEVEL-2---- */
+
+.section-four{
+    /* border: 2px solid black; */
+    background-color: #0B0F19;
+    width: 1351px;
+    height: 220px;
+    position: relative;
+    top: 50px;
+}
+.levelV b{
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.levelV .beyond{
+    position: absolute;
+    left: 122px;
+    color:  #999292;
+}
+.image-vas{
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+.levelV .vascript{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    top: 165px;
+    left: 17px;
+}
+.image-pyt{
+    position: absolute;
+    top: 60px;
+    left: 199px;
+}
+.levelP .python{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    top: 162px;
+    left: 210px;
+}
+
+.image-dat{
+    position: absolute;
+    top: 60px;
+    left: 388.3px;
+}
+.levelD .data{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    top: 160px;
+    left: 422px;
+}
+.levelD .structures{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    top: 175px;
+    left: 393px;
+}
+
+.image-mac{
+    position: absolute;
+    top: 60px;
+    left: 577.6px;
+}
+.levelMA .machine{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    top: 160px;
+    left: 595px;
+}
+.levelMA .Learning{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    top: 178px;
+    left: 595px;
+}
+
+.image-tens{
+    position: absolute;
+    top: 42px;
+    left: 766.9px;
+}
+.levelT .tensor{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    top: 160px;
+    left: 805px;
+}
+.levelT .flow{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    top: 178px;
+    left: 815px;
+}
+
+.image-dep{
+    position: absolute;
+    top: 35px;
+    left: 956.2px;
+}
+.levelDP .deep{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    top: 160px;
+    left: 1005px;
+}
+.levelDP .learning{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    top: 178px;
+    left: 992px;
+}
+
+.image-AI{
+    position: absolute;
+    top: 60px;
+    left: 1160px;
+}
+.levelAI .AI{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    top: 160px;
+    left: 1172px;
+}
+
+
+/* ----ABOUT---- */
+.section-five{
+    position: relative;
+    /* border: 2px solid red; */
+    background-color: #0f1522;
+    width: 1351px;
+    height: 700px;
+    top: 110px;
+}
+.section-five .my{
+    position: absolute;
+    color: #5521af;
+    font-size: 2.5em;
+    top: 100px;
+    left: 600.5px;
+}
+.section-five .info{
+    position: absolute;
+    color: #05B0D1;
+    font-size: 2.5em;
+    top: 100px;
+    left: 667px;
+}
+.my-pic{
+    position: absolute;
+    top: 210px;
+    left: 220px;
+}
+.section-five .about{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    top: 230px;
+    left: 700px;
+}
+.section-five .line{
+    position: absolute;
+    background-color: white;
+    width: 80px;
+    height: 2px;
+    top: 265px;
+    left: 705px;
+}
+.section-five .note-one{
+    position: absolute;
+    color: #999292;
+    font-size: 1.1em;
+    top: 320px;
+    left: 700px;
+    width: 500px;
+}
+.section-five .note-two{
+    position: absolute;
+    color: #999292;
+    font-size: 1.1em;
+    top: 380px;
+    left: 700px;
+    width: 500px;
+}
+
+
+/* -----CONTACT ME---- */
+.section-six{
+    position: relative;
+    /* border: 2px solid red; */
+    background-color: #0B0F19;
+    width: 1351px;
+    height: 900px;
+    top: 110px;
+}
+.section-six .conc{
+    position: absolute;
+    color: #5521af;
+    font-size: 2.5em;
+    top: 80px;
+    left: 540px;
+}
+.section-six .my{
+    position: absolute;
+    color: #05B0D1;
+    font-size: 2.5em;
+    top: 80px;
+    left: 750px;
+}
+
+.contact{
+    position: absolute;
+    /* border: 2px solid red; */
+    background-color: #0f1522;
+    width: 600px;
+    height: 600px;
+    top: 200px;
+    left: 40px;
+}
+.section-six .info{
+    position: absolute;
+    color: white;
+    font-size: 2em;
+    top: 15px;
+    left: 40px;
+
+}
+.section-six .email{
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+    top: 100px;
+    left: 40px;
+}
+.section-six .omo{
+    position: absolute;
+    color: #999292;
+    font-size: 1.1em;
+    top: 140px;
+    left: 40px;
+}
+.section-six .phone{
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+    top: 200px;
+    left: 40px;
+}
+.section-six .no-one{
+    position: absolute;
+    color: #999292;
+    font-size: 1.1em;
+    top: 240px;
+    left: 40px;
+}
+.section-six .loc{
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+    top: 300px;
+    left: 40px;
+}
+.section-six .oyo{
+    position: absolute;
+    color: #999292;
+    font-size: 1.1em;
+    top: 340px;
+    left: 40px;
+}
+.section-six .follow{
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+    top: 400px;
+    left: 40px;
+}
+.section-six .fa-github{
+    position: absolute;
+    color: white;
+    font-size: 2.5em;
+    top: 480px;
+    left: 170px;
+}
+.section-six .fa-linkedin{
+    position: absolute;
+    color: white;
+    font-size: 2.5em;
+    top: 480px;
+    left: 280px;
+}
+.section-six .fa-envelopes-bulk{
+    position: absolute;
+    color: white;
+    font-size: 2.5em;
+    top: 480px;
+    left: 400px;
+}
+
+.message{
+    position: absolute;
+    /* border: 2px solid red; */
+    background-color: #0f1522;
+    width: 600px;
+    height: 600px;
+    top: 200px;
+    left: 700px;
+}
+.section-six .send{
+    position: absolute;
+    color: white;
+    font-size: 2em;
+    top: 15px;
+    left: 40px;
+}
+.section-six .name{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    top: 90px;
+    left: 40px;
+}
+.section-six .nam{
+    position: absolute;
+    color: #999292;
+    font-size: 1.2em;
+    border-radius: 8px;
+    height: 50px;
+    width: 500px;
+    top: 130px;
+    left: 40px;
+    border: none;
+}
+.section-six .mail{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    top: 220px;
+    left: 40px;
+}
+.section-six .mal{
+    position: absolute;
+    color: #999292;
+    font-size: 1.2em;
+    border-radius: 8px;
+    height: 52px;
+    width: 500px;
+    top: 260px;
+    left: 40px;
+}
+.section-six .subject{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    top: 350px;
+    left: 40px;
+}
+.section-six .subect{
+    position: absolute;
+    border-radius: 8px;
+    height: 120px;
+    width: 500px;
+    top: 390px;
+    left: 40px;
+}
+.section-six .but{
+    color: #0B0F19;
+    padding: 13px 30px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: none;
+    top: 530px;
+    left: 180px;
+    position: absolute;
+}
+
+
+/* ----FOOTER--- */
+.section-seven{
+    position: relative;
+    width: 1351px;
+    height: 120px;
+    background-color: #0f1522;
+    top: 150px;
+}
+.section-seven .right{
+    position: absolute;
+    color: white;
+    top: 50px;
+    left: 150px;
+}
+.section-seven .nexa{
+    position: absolute;
+    left: 950px;
+    top: 10px;
+}
+.section-seven .fa-at{
+    color: white;
+    position: absolute;
+    top: 55px;
+    left: 127px;
+}
+
+
+
